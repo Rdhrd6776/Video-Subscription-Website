@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+  
+{% block content %}
+    <header class="min-h-screen bg-black bg-opacity-75 showcase border-gray-600 border-b-8 flex justify-center items-center bg-no-repeat"  style="background-image: url('{% static 'Netflixapp/background_netflix.jpg'%}');">
+        <div class="z-10 h-full py-32 md:py-0 text-gray-100 text-center flex items-center flex-col">
+            <h1 class="font-semibold text-4xl md:text-5xl w-10/12 md:w-3/4 text-center">
+                Unlimited movies, TV shows, and more.
+            </h1>
+            <h3 class="text-xl md:text-xl py-5">
+                Watch anywhere. Cancel anytime.
+            </h3>
+            <h4 class="text-sm md:text-lg pb-3">
+                Ready to watch? Enter your email to create or restart your membership.
+            </h4>
+
+            <div class="w-full flex justify-center">
+                <div class="flex justify-center items-center w-11/12 md:w-10/12">
+                    <input type="email" name="" id="" placeholder="Email address" class="md:py-5 py-4 px-2 placeholder-gray-500 rounded-tl-sm rounded-bl-sm outline-none  text-gray-900 bg-gray-50 block w-8/12 md:w-3/4">
+                    <button class="bg-primary_red font-medium md:font-normal md:w-1/4 flex justify-center items-center py-4 px-1 md:px-0 rounded-br-sm rounded-tr-sm md:text-2xl">
+                        <span>
+                            Get Started
+                        </span>
+                        <ion-icon name="chevron-forward-outline" class="text-2xl"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10 ">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                Enjoy on your TV.
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+            </h5>
+        </div>
+        <div class='md:w-1/2 flex justify-center items-center'>
+            <img src="{%static 'Netflixapp/tv.png'%}" class="w-8/12" alt="">
+        </div>
+    </section>
+
+    <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+        <div class='md:w-1/2 flex justify-center items-center order-2'>
+            <img src="{% static 'Netflixapp/mobile-0819.jpg'%}" class="w-8/12" alt="">
+        </div>
+
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                Download your shows to watch offline.
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                Save your favorites easily and always have something to watch.
+            </h5>
+        </div>
+        
+    </section>
+
+    <section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+        <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                Create profiles for kids.
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
+            </h5>
+        </div>
+        <div class='md:w-1/2 flex justify-center items-center'>
+            <img src="{% static 'Netflixapp/netflix_kid.png'%}" class="w-8/12" alt="">
+        </div>
+    </section>
+
+    
+    {% comment %} Frequently Asked Questions {% endcomment %}
+    
+
+    {% comment %} <section>
+        <div class="our-story-card faq-card" data-uia-nmhp="faq" data-uia="our-story-card" id="faq">
+            <div class="our-story-card-text"><h1 id="" class="our-story-card-title" data-uia="faq-title">Frequently Asked Questions</h1>
+                <ul class="faq-list">
+                    <li class="faq-list-item" data-uia-nmhp="faq-list-item" data-uia-faq="what_is_netflix">
+                        <button class="faq-question">What is Netflix?<svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"><path ></path></svg></button>
+                        <div class="faq-answer closed"><span id="" data-uia="">Netflix is a streaming service that offers a wide variety of 
+                            award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected 
+                            devices.<br><br>You can watch as much as you want, whenever you want, without a single ad – all for 
+                            one low monthly price. There's always something new to discover, and new TV shows and movies are added 
+                            every week!</span>
+                        </div>
+                    </li>
+                    <li class="faq-list-item" data-uia-nmhp="faq-list-item" data-uia-faq="cost">
+                        <button class="faq-question">How much does Netflix cost?<svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                        </svg></button><div class="faq-answer closed"><span id="" data-uia="">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all
+                             for one fixed monthly fee. Plans range from ₹&nbsp;149 to ₹&nbsp;649 a month. No extra costs, no contracts.</span>
+                            </div></li><li class="faq-list-item" data-uia-nmhp="faq-list-item" data-uia-faq="where_to_watch">
+                                <button class="faq-question">Where can I watch?<svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                    </svg></button><div class="faq-answer closed"><span id="" data-uia="">Watch anywhere, anytime. Sign in with your Netflix account to watch 
+                                        instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including 
+                                        smart TVs, smartphones, tablets, streaming media players and game consoles.<br><br>You can also download your favourite shows with the iOS, 
+                                        Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</span>
+                                    </div></li><li class="faq-list-item" data-uia-nmhp="faq-list-item" data-uia-faq="cancel"><button class="faq-question">How do I cancel?<svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true">
+                                    </button><div class="faq-answer closed"><span id="" data-uia="">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start 
+                                        or stop your account anytime.</span></div></li><li class="faq-list-item" data-uia-nmhp="faq-list-item" data-uia-faq="what_to_watch_nft"><button class="faq-question">What can I watch on Netflix?<svg id="thin-x" viewBox="0 0 26 26" 
+                                            class="svg-icon svg-icon-thin-x svg-closed" focusable="true"><path></path></svg></button><div class="faq-answer closed"><span id="" data-uia="">Netflix has an extensive library of feature films, documentaries, TV shows, anime, 
+                                                award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</span></div></li><li class="faq-list-item" data-uia-nmhp="faq-list-item" data-uia-faq="kids_value_prop"><button class="faq-question">Is 
+                                                    Netflix good for kids?<svg id="thin-x" viewBox="0 0 26 26" class="svg-icon svg-icon-thin-x svg-closed" focusable="true"><path></path></svg></button><div class="faq-answer closed"><span id="" data-uia="">The Netflix Kids 
+                                                    experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.<br><br>Kids profiles come with PIN-protected parental controls that let you restrict 
+                                                    the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</span></div></li></ul><div class="cta-link-wrapper"><form class="cta-form" action="/signup" method="GET" id="formstart">
+                                                        <input type="hidden" name="locale" value="en-IN"><button class="btn btn-red nmhp-cta nmhp-cta-extra-large btn-submit btn-custom" type="submit" autocomplete="off" tabindex="0" role="link" data-uia="our-story-cta-faq">
+                                                            <span id="" class="cta-btn-txt" data-uia="">Finish Sign Up</span><span id="" class="chevron-right-arrow" data-uia=""><svg viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg"><desc>chevron</desc><path fill="none" fill-rule="evenodd">
+                                                            </path></svg></span></button></form></div></div><div class="center-pixel" style="position:absolute"></div></div>
+    </section> {% endcomment %}
+    
+   
+
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Netflix web serires </h1>
+
+<div class="container mt-4">
+    <div class="row">
+        {% for w in Webseries %}
+        <div class="col-lg-4">
+            <div class="card shadow" >
+                <img scr="{{w.webseries_image}}" class="card-img-top">
+                <div class="crad-body">
+                    
+    </div>
+
+
+</div>
+
+
+
+{% endblock content %}
+
